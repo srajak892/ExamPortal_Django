@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+   
+    .jumbotron {
+      position: relative;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url("{% static 'image/hello.gif'%}");
+      background-repeat: no-repeat;
+      background-position-x: 80px;
+      background-position-y: 60px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .lead{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+      width: 500px;
+      height: 500px;
+    }
+    .btn btn-primary btn-lg{
+      
+      background-color: aliceblue;
+    }
+   
+  </style>
+
+</head>
+
+<body>
+
+  {% include "quiz/navbar.html" %}
+  <br><br>
+ 
+  <div class="jumbotron" style="margin-bottom:0px;">
+    <br><br><br><br><br>
+    
+    <h1 class="display-4">Hello, Students.</h1>
+    <!-- <img src="{% static "image/hello.png" %}" > -->
+    
+    <p class="lead" >
+      <br><br><br>
+      <a class="btn btn-primary btn-lg" href="studentsignup" role="button" >Create Your Account</a>
+      <div class=lead>
+      <a class="btn btn-primary btn-lg" href="studentlogin" role="button">Login</a>
+
+    </div>
+    </p>
+ 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+  
+
+  {% include "quiz/footer.html" %}
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    div {
+ 
+}
+    .jumbotron {
+      position: relative;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url("{% static 'image/hey.png'%}");
+      background-repeat: no-repeat;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .lead{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+      width: 500px;
+      height: 500px;
+    }
+   
+  </style>
+
+</head>
+
+<body>
+
+  {% include "quiz/navbar.html" %}
+  <br><br>
+ 
+  <div class="jumbotron" style="margin-bottom:0px;">
+    <br><br><br><br><br>
+    
+    <h1 class="display-4">Hello, Teachers.</h1>
+    <!-- <img src="{% static "image/hey.png" %}" > -->
+    
+    <p class="lead" >
+      <br><br><br>
+      <a class="btn btn-primary btn-lg" href="teachersignup" role="button">Create Your Account</a>
+
+      <div class=lead>
+        <a class="btn btn-primary btn-lg" href="teacherlogin" role="button">Login</a>
+    </div>
+  </p>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+
+{% include "quiz/footer.html" %}
+</body>
+
+</html>
